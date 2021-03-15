@@ -7,16 +7,13 @@ public class Words
 {
     public static String[] words = new String[3971];
     public static HashMap<String, String> wordPairs= new HashMap<String, String>();
-    //this will be in a key, value pair of the word minus the first char and the word it maps to
-    //could be a problem for words that are the same except the first letter but like....i can figure that out with mine eyes
-    //if it gives back rittle and little makes sense. we'll get there. i believe in us.
+    //this will be in a key, value pair of the word minus the first char and the words it maps to
 
     static void parseWords(String word, int idx){
         //two passes
         //first will store the word and it minus the first char into the hashmap, and the word in an array
         //second will go through word by word and lookup if its wordPair partial is in the hashmap
-        //first pass can be a helper function :)
-
+        
         words[idx] = word;
 
         String chopped = word.substring(1);
@@ -58,8 +55,6 @@ public class Words
             counter++;
         }
         sc.close();  //closes the scanner
-        // parseWords("abccde", 0);
-        // parseWords("fbddec", 1);
         findPairs();
     }
 }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Words
 {
-    public static String[] words = new String[3976];
+    public static String[] words = new String[3971];
     public static HashMap<String, String> wordPairs= new HashMap<String, String>();
     //this will be in a key, value pair of the word minus the first char and the word it maps to
     //could be a problem for words that are the same except the first letter but like....i can figure that out with mine eyes
